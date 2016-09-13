@@ -5,10 +5,10 @@ module Unparser
       class Range < self
         include Unterminated
 
-        TOKENS = IceNine.deep_freeze(
+        TOKENS = {
           irange: '..',
           erange: '...'
-        )
+        }
 
         handle(*TOKENS.keys)
 

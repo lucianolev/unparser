@@ -100,7 +100,7 @@ module Unparser
 
         handle :masgn
 
-        PARENS = IceNine.deep_freeze(%w([ ]))
+        PARENS = %w([ ])
 
       private
 

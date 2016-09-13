@@ -98,7 +98,7 @@ module Unparser
 
     DEFAULT_DELIMITER = ', '.freeze
 
-    CURLY_BRACKETS = IceNine.deep_freeze(%w({ }))
+    CURLY_BRACKETS = %w({ })
 
     KEYWORDS = constants.each_with_object([]) do |name, keywords|
       value = const_get(name).freeze

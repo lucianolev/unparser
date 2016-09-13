@@ -3,11 +3,11 @@ require 'spec_helper'
 describe Unparser, mutant_expression: 'Unparser::Emitter*' do
   describe '.unparse' do
 
-    PARSERS = IceNine.deep_freeze(
+    PARSERS = {
       '2.1' => Parser::Ruby21,
       '2.2' => Parser::Ruby22,
       '2.3' => Parser::Ruby23
-    )
+    }
 
     RUBIES = PARSERS.keys.freeze
 

@@ -4,10 +4,10 @@ module Unparser
     class FlipFlop < self
       include Unterminated
 
-      MAP = IceNine.deep_freeze(
+      MAP = {
         iflipflop: '..',
         eflipflop: '...'
-      ).freeze
+      }.freeze
 
       handle(*MAP.keys)
 

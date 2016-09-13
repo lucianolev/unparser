@@ -10,10 +10,10 @@ module Unparser
 
       private
 
-        MAP = IceNine.deep_freeze(
+        MAP = {
           :'-@' => '-',
           :'+@' => '+'
-        )
+        }
 
         # Perform dispatch
         #

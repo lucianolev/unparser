@@ -16,7 +16,7 @@ module Unparser
 
     DEFAULT_DELIMITER = ', '.freeze
 
-    CURLY_BRACKETS = IceNine.deep_freeze(%w({ }))
+    CURLY_BRACKETS = %w({ })
 
     module Unterminated
       def terminated?
